@@ -20,7 +20,7 @@ public class MapDemo {
 		System.out.println("search using value "+mm1.containsValue("Ajay"));
 		System.out.println(" usign key we can get the value "+mm1.get(1));
 		System.out.println("using key we can get the value "+mm1.get(10));
-		mm1.remove(1);		// usign key we can remove key-value pairs 
+		mm1.remove(1);		// using key we can remove key-value pairs 
 		System.out.println(mm1);
 		
 	}
