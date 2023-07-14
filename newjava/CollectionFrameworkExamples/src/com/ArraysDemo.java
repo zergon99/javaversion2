@@ -51,6 +51,12 @@ public class ArraysDemo {
 		}else {
 			System.out.println("present");
 		}
+		
+		String name1="Akash";
+		String name2 ="Akashi";
+		System.out.println(name1.compareTo(name2));
+		System.out.println(name1.codePointAt(2));
+		System.out.println(name2.codePointAt(2));
 	}
 
 }
