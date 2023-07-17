@@ -22,6 +22,9 @@ public class DemoTest {
 		System.out.println("PName is "+p1.getPname());
 		System.out.println("Price is "+p1.getPrice());
 		
+		System.out.println(p1);
+		System.out.println(p);
+		
 	}
 	
 
