@@ -10,8 +10,10 @@ public class App {
 	String con;
 	StudentService ss = new StudentService();
 	int choice;
+	int key;
 	do {
 		System.out.println("1:Add Student 2: Number of Student 3:Display Student 4: Display Student One by one 5:keys");
+		System.out.println("6 : Search Data 7: Remove Data");
 		System.out.println("Plz enter your choice");
 		choice = sc.nextInt();
 		switch (choice) {
@@ -26,6 +28,14 @@ public class App {
 		       break;
 		case 5:ss.getOnlyKeys();
 				break;
+		case 6:System.out.println("Enter the key");
+	       key = sc.nextInt();
+	       ss.searchDataUsingKey(key);
+	       break;
+	case 7: System.out.println("Enter the key to remove the data");
+	       key = sc.nextInt();
+	       ss.removeData(key);
+	       break;		
 		default:System.out.println("Wrong choice");
 		 	   break;
 		}

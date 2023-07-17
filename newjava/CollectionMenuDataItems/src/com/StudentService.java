@@ -58,6 +58,22 @@ public class StudentService {
 		
 		}
 	
+	public void searchDataUsingKey(int key) {
+		if(stdNames.containsKey(key)) {
+			System.out.println("Your value is "+stdNames.get(key));
+		}else {
+			System.out.println("No record present");
+		}
+	}
+	public void removeData(int key) {
+		if(stdNames.containsKey(key)) {
+			stdNames.remove(key);
+			System.out.println("Record removed from map");
+		}else {
+			System.out.println("No record present");
+		}
+	}
+	
 	public void close() {
 		sc.close();
 	}
